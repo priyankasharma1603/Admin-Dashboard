@@ -1,0 +1,153 @@
+/* src/App.css */
+
+body {
+  background-color: #e9fcff; /* Light blue background */
+  color: #0d47a1; /* Dark blue text color */
+  font-family: 'Arial', sans-serif; /* Font style */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the main app */
+.App {
+  padding: 20px;
+}
+
+/* Header style */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold; /* Bold text */
+  color: #1976d2; /* Primary blue color for header */
+}
+
+/* User Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(147, 139, 255, 0.2); 
+  border: 2px solid rgba(7, 7, 7, 0.682);/* Light shadow for the table */
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #90caf9; /* Light blue border */
+}
+
+th {
+  background-color: #2196f3; /* Blue header background */
+  font-weight: bold; /* Bold text */
+  color: #ffffff; /* White text for header */
+}
+
+tr:nth-child(even) {
+  background-color: #bbdefb; /* Lighter blue rows for contrast */
+}
+
+tr:hover {
+  background-color: #90caf9; /* Medium blue on hover */
+}
+
+/* User Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Light shadow for the form */
+  padding: 20px;
+  background-color: #13217e; /* Light green background for the form */
+  border-radius: 8px; /* Rounded corners */
+}
+
+input, select {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #90caf9; /* Light blue border for input fields */
+  border-radius: 4px;
+  background-color: #ffffff; /* White background for input fields */
+  color: #0d47a1; /* Dark blue text */
+  font-weight: normal; /* Normal text */
+}
+
+input:focus, select:focus {
+  border-color: #1976d2; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1976d2; /* Primary blue button color */
+  color: #fff; /* White text */
+  font-weight: bold; /* Bold text */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Light box shadow */
+  
+}
+
+button:hover {
+  background-color: #1565c0; /* Darker blue on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Button styles for the analytics dashboard */
+.analytics button {
+  background-color: #4caf50; /* Green button color */
+}
+
+.analytics button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Analytics Dashboard styles */
+.analytics {
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Light shadow for the analytics */
+  padding: 20px;
+  background-color: #bbdefb; /* Light blue background for analytics */
+  border-radius: 8px; 
+  border: 2px solid black;/* Rounded corners */
+}
+
+.analytics h2 {
+  color: #1976d2; /* Blue color for analytics header */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+/* Card styles for analytics metrics */
+.card {
+  background-color: #90caf9; /* Light blue card background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow */
+  margin: 10px 0; /* Margin between cards */
+  transition: transform 0.2s; /* Transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px; /* Reduced padding for smaller screens */
+  }
+
+  table {
+    font-size: 14px; /* Smaller font size for the table */
+  }
+
+  input, select, button {
+    font-size: 14px; /* Smaller font size for inputs and buttons */
+  }
+
+  h1 {
+    font-size: 24px; /* Smaller header size */
+  }
+}

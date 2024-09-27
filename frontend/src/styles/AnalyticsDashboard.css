@@ -1,0 +1,44 @@
+/* AnalyticsDashboard.css */
+
+.analytics-dashboard {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-dashboard h2 {
+  margin-bottom: 15px;
+}
+
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.metric-card {
+  flex: 1 1 150px;
+  background-color: #f0f4f8;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.metric-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.metric-card p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.chart-container {
+  width: 100%;
+  height: 400px;
+}
